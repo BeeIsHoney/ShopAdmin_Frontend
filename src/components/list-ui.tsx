@@ -1,0 +1,5 @@
+"use client";
+import {Check,X,ChevronLeft,ChevronRight} from 'lucide-react';
+import {Button} from './ui';
+export function ListStatus({active}:{active:boolean}){return <span className={'bee-status '+(active?'enabled':'disabled')} role="img" aria-label={active?'Active':'Inactive'}>{active?<Check size={17}/>:<X size={16}/>}</span>;}
+export function ListPager({total,page,size,onPage,onSize}:{total:number;page:number;size:number;onPage:(n:number)=>void;onSize:(n:number)=>void}){const pages=Math.max(1,Math.ceil(total/size)),current=Math.min(page,pages-1);return <div className="bee-list-footer"><span>Total: <b>{total.toLocaleString()}</b></span><div><select aria-label="Records per page" value={size} onChange={e=>onSize(Number(e.target.value))}>{[10,25,50,100].map(n=><option key={n}>{n}</option>)}</select><div className="bee-pagination"><Button aria-label="Previous page" disabled={!current} onClick={()=>onPage(current-1)}><ChevronLeft size={16}/></Button><span>{current+1}</span><Button aria-label="Next page" disabled={current+1>=pages} onClick={()=>onPage(current+1)}><ChevronRight size={16}/></Button></div></div></div>;}

@@ -1,0 +1,86 @@
+/* BeeShop product management: compact, black glass reference from Head Admin.
+   Deliberately scoped; dashboard, auth, orders and account keep their styles. */
+.bee-theme .oc-screen,.bee-theme .oc-editor{color:#e7e7e7;max-width:100%;min-width:0}
+.bee-theme .oc-screen{display:grid;gap:15px}
+.bee-theme .oc-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:11px;flex-wrap:wrap}
+.bee-theme .oc-search{position:relative;flex:1;max-width:370px;min-width:160px}
+.bee-theme .oc-search>svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:#777;pointer-events:none}
+.bee-theme .oc-search input{padding-left:37px;min-height:39px}
+.bee-theme .oc-search>button{position:absolute;right:8px;top:8px;color:#bbb;padding:3px}
+.bee-theme .oc-input{width:100%;height:39px;min-width:0;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.11);border-radius:8px;color:#eee;padding:8px 12px;font-size:13px;outline:none;box-shadow:0 8px 28px rgba(0,0,0,.15)}
+.bee-theme .oc-input:hover{border-color:rgba(255,255,255,.23)}
+.bee-theme .oc-input:focus{border-color:rgba(255,255,255,.38)}
+.bee-theme .oc-input:disabled{opacity:.6}
+.bee-theme textarea.oc-input{height:auto;min-height:80px;resize:vertical}
+.bee-theme .oc-iconbtn{width:39px;height:39px;border-radius:8px;border:1px solid #ffffff20;background:#ffffff0b;display:grid;place-items:center;color:#ddd;position:relative}
+.bee-theme .oc-iconbtn:hover,.bee-theme .oc-btn:hover{background:#ffffff17}
+.bee-theme .oc-filters{display:flex;align-items:end;gap:13px;flex-wrap:wrap;border:1px solid #ffffff17;background:#0b0c0ecc;padding:16px;border-radius:8px}
+.bee-theme .oc-filters>.oc-field{flex:1;min-width:140px}
+.bee-theme .oc-filters>.oc-btn{min-height:38px}
+.bee-theme .oc-field{display:flex;flex-direction:column;gap:7px;font-size:12px;min-width:0}
+.bee-theme .oc-field>span{font-weight:520;color:#bfbfbf}
+.bee-theme .oc-field>span>em{color:#ff6262;font-style:normal;margin-left:3px}
+.bee-theme .oc-field>small{font-size:11px;color:#898989;line-height:1.5}
+.bee-theme .oc-table-card{border:1px solid #ffffff19;background:rgba(0,0,0,.32);border-radius:9px;overflow:hidden;min-width:0;box-shadow:0 8px 28px #0005}
+.bee-theme .oc-table-scroll{overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.bee-theme .oc-table{width:100%;border-collapse:collapse;text-align:left;font-size:12px;white-space:nowrap}
+.bee-theme .oc-table th{background:#ffffff06;color:#adadb2;font-weight:500;font-size:11px;letter-spacing:.03em}
+.bee-theme .oc-table th,.bee-theme .oc-table td{padding:14px 13px;border-bottom:1px solid #ffffff12}
+.bee-theme .oc-table tbody tr:last-child td{border-bottom:0}
+.bee-theme .oc-table tbody tr:hover{background:#ffffff06}
+.bee-theme .oc-table td>b{font-weight:620;color:#f5f5f5}
+.bee-theme .oc-table td>small{display:block;color:#999;margin-top:5px;font-size:10px}
+.bee-theme .oc-table .oc-row-actions{display:flex;gap:9px;align-items:center}
+.bee-theme .oc-row-actions>*{width:30px;height:29px;border:1px solid #ffffff19;border-radius:6px;display:grid;place-items:center;color:#ddd}
+.bee-theme .oc-row-actions>*.danger{color:#df8c8c}
+.bee-theme .oc-row-actions>*:hover{background:#ffffff15}
+.bee-theme .oc-editor{max-width:950px}
+.bee-theme .oc-header{margin-bottom:17px}
+.bee-theme .oc-header h2{font-size:17px;font-weight:620;margin:5px 0}
+.bee-theme .oc-header p{font-size:11px;color:#999}
+.bee-theme .oc-back{display:inline-flex;align-items:center;gap:7px;color:#aaa;font-size:12px;padding:6px 0;margin-bottom:12px}
+.bee-theme .oc-back:hover{color:white}
+.bee-theme .oc-form{display:grid;gap:16px;max-width:860px}
+.bee-theme .oc-form>.oc-field{gap:7px}
+.bee-theme .oc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.bee-theme .oc-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #ffffff24;background:#ffffff0e;color:#eee;padding:10px 15px;font-size:12px;border-radius:7px}
+.bee-theme .oc-btn.primary{background:#e5e5e5;color:#111;border-color:#e5e5e5;font-weight:630}
+.bee-theme .oc-btn.primary:hover{background:#fff}
+.bee-theme .oc-btn.ghost{color:#bbb;background:#ffffff08}
+.bee-theme .oc-submit{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:7px;padding-top:17px;border-top:1px solid #ffffff15}
+.bee-theme .oc-combo{position:relative}
+.bee-theme .oc-combo-trigger{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;cursor:pointer}
+.bee-theme .oc-combo-trigger>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bee-theme .oc-combo-menu{position:absolute;z-index:60;top:calc(100% + 5px);left:0;right:0;background:#111214;border:1px solid #ffffff29;border-radius:8px;padding:7px;box-shadow:0 18px 38px #000c}
+.bee-theme .oc-combo-menu>input{height:35px;margin-bottom:5px}
+.bee-theme .oc-combo-options{max-height:220px;overflow:auto;display:grid}
+.bee-theme .oc-combo-options>button{display:flex;align-items:center;justify-content:space-between;padding:10px;text-align:left;color:#bbb;border-radius:5px;font-size:12px}
+.bee-theme .oc-combo-options>button:hover,.bee-theme .oc-combo-options>button[aria-selected=true]{background:#ffffff12;color:#fff}
+.bee-theme .oc-combo-options>small{padding:14px;text-align:center;color:#999}
+.bee-theme .oc-info,.bee-theme .oc-inline-note,.bee-theme .oc-hint{border:1px solid #ffffff1b;background:#ffffff06;border-radius:8px;padding:13px;color:#aaa;line-height:1.75;font-size:12px}
+.bee-theme .oc-info b{color:#e3e3e3}
+.bee-theme .oc-info p{margin:4px 0 6px}
+.bee-theme .oc-chip{display:inline-block;border:1px solid #ffffff24;padding:4px 8px;border-radius:6px;margin:3px;color:#ddd}
+.bee-theme .oc-manual{display:grid;gap:13px}
+.bee-theme .oc-manual-field{display:grid;gap:13px;padding:15px;border:1px solid #ffffff17;background:#0006;border-radius:8px}
+.bee-theme .oc-section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}
+.bee-theme .oc-section-heading>button{width:auto}
+.bee-theme .oc-check{display:flex;align-items:center;gap:10px;font-size:12px}
+.bee-theme .oc-check input{width:16px;height:16px;accent-color:#dadada}
+.bee-theme .oc-price{display:grid;gap:4px;background:#ffffff06;border:1px solid #ffffff15;border-radius:8px;padding:14px}
+.bee-theme .oc-price span{font-size:11px;color:#999}
+.bee-theme .oc-price strong{font-size:22px;color:#eee}
+.bee-theme .oc-price small{color:#888}
+.bee-theme .oc-link{color:#dedede;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.bee-theme .oc-toolbar{flex-wrap:nowrap;gap:8px}.bee-theme .oc-search{min-width:0;max-width:none}.bee-theme .oc-grid{grid-template-columns:1fr}.bee-theme .oc-form{gap:14px}.bee-theme .oc-input{font-size:16px}.bee-theme .oc-table th,.bee-theme .oc-table td{padding:12px 10px}.bee-theme .oc-submit{position:sticky;bottom:0;padding:13px 0 max(12px,env(safe-area-inset-bottom));background:#0c0d0f;z-index:5}}
+
+.bee-theme .oc-group-name{display:flex;align-items:center;gap:9px}.bee-theme .oc-group-name img{width:26px;height:26px;border-radius:5px;object-fit:cover}
+
+/* Uploaded product/package icons beside the existing table labels. */
+.bee-theme .oc-item-name{display:flex;align-items:center;gap:10px;min-width:0}
+.bee-theme .oc-item-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border:1px solid #ffffff19;border-radius:8px;overflow:hidden;background:#ffffff08;color:#8c8c93}
+.bee-theme .oc-item-icon img{display:block;width:100%;height:100%;object-fit:cover}
+.bee-theme .oc-item-label{display:flex;flex-direction:column;gap:5px;min-width:0;white-space:normal;overflow-wrap:anywhere}
+.bee-theme .oc-item-label b{font-weight:620;color:#f5f5f5}
+.bee-theme .oc-item-label small{color:#999;font-size:10px}
+@media(max-width:700px){.bee-theme .oc-item-name{gap:8px}.bee-theme .oc-item-icon{flex-basis:32px;width:32px;height:32px;border-radius:6px}}

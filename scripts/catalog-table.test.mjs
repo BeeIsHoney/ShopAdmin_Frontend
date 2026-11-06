@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {catalogRows,serverColor} from '../src/lib/catalog-table.ts';
+const products=[{id:7,name:'AB shop',mainName:'Arena Breakout',active:true,sortOrder:2,packages:[{id:11,name:'65 Bonds',mainName:'65',providerId:'srv_1',providerName:'Private supplier',serverName:'Private supplier',listed:true,groupId:3,active:true,sortOrder:2},{id:12,name:'65 Bonds',providerId:'srv_2',listed:false,active:true,sortOrder:1},{id:13,name:'130 Bonds',providerId:'srv_1',listed:true,groupId:4,active:false,sortOrder:3}]},{id:8,name:'MLBB',active:false,sortOrder:1,packages:[{id:14,name:'Weekly Pass',providerId:'srv_3',listed:true,groupId:3,active:true,sortOrder:1}]}];
+const filters={query:'',game:'',group:'',server:'ALL',status:'ALL',own:false};
+const ids=(f={})=>catalogRows(products,{...filters,...f}).map(r=>r.pack.id);
+test('all Main packages remain separate rows, including identical names from distinct servers',()=>{assert.deepEqual(ids(),[14,12,11,13]);});
+test('added and not-added Main views follow shop membership',()=>{assert.deepEqual(ids({status:'ADDED'}),[14,11,13]);assert.deepEqual(ids({status:'UNADDED'}),[12]);});
+test('shop view excludes unselected Main packages and applies product/package visibility',()=>{assert.deepEqual(ids({own:true}),[14,11,13]);assert.deepEqual(ids({own:true,status:'ACTIVE'}),[11]);assert.deepEqual(ids({own:true,status:'INACTIVE'}),[14,13]);});
+test('game, group and server filters intersect in the owner list',()=>{assert.deepEqual(ids({own:true,game:'7',group:'3',server:'srv_1'}),[11]);assert.deepEqual(ids({own:true,game:'7',group:'3',server:'srv_2'}),[]);});
+test('Main group is a destination, without hiding unrelated shared packages',()=>{assert.deepEqual(ids({group:'3'}),ids());});
+test('search supports Main/shop names and anonymous server labels, without private supplier names',()=>{assert.deepEqual(ids({query:'arena'}),[12,11,13]);assert.deepEqual(ids({query:'server 2'}),[12]);assert.deepEqual(ids({query:'PRIVATE SUPPLIER'}),[]);assert.deepEqual(ids({query:'  weekly  '}),[14]);});
+test('server color follows stable alias instead of list position or supplier name',()=>{assert.equal(serverColor('srv_2'),serverColor('Server 2'));assert.notEqual(serverColor('srv_1'),serverColor('srv_2'));assert.equal(new Set(Array.from({length:12},(_,i)=>serverColor('srv_'+(i+1)))).size,12);assert.equal(serverColor('supplier-name'),'#a1a1aa');assert.match(serverColor('srv_999999999999999999'),/^hsl\(/);});

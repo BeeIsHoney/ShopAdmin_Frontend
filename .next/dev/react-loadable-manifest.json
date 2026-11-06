@@ -1,0 +1,45 @@
+{
+  "..\\node_modules\\next\\dist\\client\\dev\\hot-reloader\\app\\web-socket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts": {
+    "id": "..\\node_modules\\next\\dist\\client\\dev\\hot-reloader\\app\\web-socket.js -> @vercel/turbopack-ecmascript-runtime/browser/dev/hmr-client/hmr-client.ts",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js"
+    ]
+  },
+  "components\\panel.tsx -> ./owner-catalog": {
+    "id": "components\\panel.tsx -> ./owner-catalog",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_owner-catalog_tsx.js"
+    ]
+  },
+  "components\\panel.tsx -> ./owner-product-groups": {
+    "id": "components\\panel.tsx -> ./owner-product-groups",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_owner-product-groups_tsx.js"
+    ]
+  },
+  "components\\panel.tsx -> @/reference-ui/features/orders/BalanceAdjustmentsView": {
+    "id": "components\\panel.tsx -> @/reference-ui/features/orders/BalanceAdjustmentsView",
+    "files": [
+      "static/chunks/_app-pages-browser_src_reference-ui_features_orders_BalanceAdjustmentsView_tsx.js"
+    ]
+  },
+  "components\\panel.tsx -> @/reference-ui/features/orders/ProductOrdersView": {
+    "id": "components\\panel.tsx -> @/reference-ui/features/orders/ProductOrdersView",
+    "files": [
+      "static/chunks/_app-pages-browser_src_reference-ui_features_orders_ProductOrdersView_tsx.js"
+    ]
+  },
+  "components\\panel.tsx -> @/reference-ui/features/orders/RechargeOrdersView": {
+    "id": "components\\panel.tsx -> @/reference-ui/features/orders/RechargeOrdersView",
+    "files": [
+      "static/chunks/_app-pages-browser_src_reference-ui_features_orders_RechargeOrdersView_tsx.js"
+    ]
+  },
+  "components\\panel.tsx -> @/reference-ui/features/settings/PaymentSettingsView": {
+    "id": "components\\panel.tsx -> @/reference-ui/features/settings/PaymentSettingsView",
+    "files": [
+      "static/css/_app-pages-browser_src_reference-ui_features_settings_PaymentSettingsView_tsx.css",
+      "static/chunks/_app-pages-browser_src_reference-ui_features_settings_PaymentSettingsView_tsx.js"
+    ]
+  }
+}

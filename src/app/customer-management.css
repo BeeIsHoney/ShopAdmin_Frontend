@@ -1,0 +1,25 @@
+.reference-users-ui{min-width:0}.reference-users-ui table{width:100%;border-collapse:collapse}.reference-users-ui th,.reference-users-ui td{vertical-align:middle}.reference-users-ui footer select option{background:#111827;color:#fff}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-content{max-width:1180px;gap:16px}
+.finance-detail-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
+.finance-detail-column{display:flex;flex-direction:column;gap:16px;min-width:0}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-card{border-radius:8px;background:rgb(0 0 0/.4);backdrop-filter:blur(16px);box-shadow:0 8px 32px rgb(0 0 0/.25)}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-header{padding:12px 16px;gap:12px}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-header :is(h1,h2){font-size:14px;line-height:1.5}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-row :is(th,td){font-size:13px;padding:10px 16px;overflow-wrap:anywhere}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-row th{width:38%}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-row td{width:62%}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-ban{font-size:11px;padding:4px 10px;border-radius:4px;background:#e11d48;letter-spacing:.04em}
+:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-ban.is-banned{background:#059669;color:white}
+.finance-recent-table{width:100%;border-collapse:collapse;font-size:12px;text-align:left}
+.finance-recent-table :is(th,td){padding:10px 16px;border-bottom:1px solid rgb(255 255 255/.1);border-right:1px solid rgb(255 255 255/.1)}
+.finance-recent-table th{font-weight:700;background:rgb(255 255 255/.02)}
+.finance-recent-table td a{color:#7dd3fc;text-decoration:none}.finance-recent-table td a:hover{text-decoration:underline}
+@media(min-width:1536px){.finance-detail-layout{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:639px){:is(#reference-finance-scope,.reference-finance-ui) .finance-detail-row :is(th,td){padding:10px 12px;font-size:12px}.finance-recent-table :is(th,td){padding:9px 12px}}
+
+/* These views use the existing scoped, precompiled utility sheet. Keep new
+   dialog sizing explicit so newly introduced utility names cannot stretch it. */
+.user-status-overlay{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:16px;background:rgb(0 0 0/.75);backdrop-filter:blur(12px)}
+.user-status-overlay>.user-status-dialog{position:relative;z-index:1;width:100%;max-width:360px;max-height:calc(100dvh - 32px);overflow:auto;border-radius:8px;font-family:Inter,ui-sans-serif,"Myanmar Text","Noto Sans Myanmar",system-ui,sans-serif}
+.user-status-dialog h3{font-size:14px;line-height:1.5}.user-status-dialog p{font-size:13px;line-height:1.7}
+.user-status-dialog .ultimate-3d-btn{min-width:80px;height:34px;font-size:13px}

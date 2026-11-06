@@ -1,0 +1,5 @@
+{
+  "name": "BeeShop Admin",
+  "description": "BeeShop shop owner workspace for managing game top-up products, packages, MMK pricing, discounts, orders, and transactions.",
+  "requestFramePermissions": []
+}
