@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/TornadoWebService/shopadmin_dashboard/src/app/error.tsx"],"sourcesContent":["\"use client\";\nexport default function ErrorPage({reset}:{reset:()=>void}) { return <main className=\"fatal\"><h1>This page could not load.</h1><p>Please try again.</p><button onClick={reset}>Try again</button></main>; }\n"],"names":["ErrorPage","reset","className","onClick"],"mappings":";;;;;AAAA;;AACe,SAASA,UAAU,EAACC,KAAK,EAAkB;IAAI,qBAAO,8OAAC;QAAKC,WAAU;;0BAAQ,8OAAC;0BAAG;;;;;;0BAA8B,8OAAC;0BAAE;;;;;;0BAAqB,8OAAC;gBAAOC,SAASF;0BAAO;;;;;;;;;;;;AAA2B"}}]
-}
