@@ -1,0 +1,429 @@
+/* [project]/src/app/owner-lists.css [app-client] (css) */
+.bee-list-screen {
+  color: #dedee1;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  display: flex;
+  position: relative;
+}
+
+.bee-list-toolbar {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  display: flex;
+}
+
+.bee-list-toolbar .search-box {
+  background: #050505;
+  border-color: #ffffff16;
+  border-radius: 8px;
+  width: 320px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 38px;
+  margin: 0;
+}
+
+.bee-list-toolbar .search-box input {
+  box-shadow: none;
+  background: none;
+  border: 0;
+  padding: 9px 0;
+  font-size: 13px;
+}
+
+.bee-square {
+  color: #e4e4e7;
+  cursor: pointer;
+  background: #ffffff06;
+  border: 1px solid #ffffff18;
+  border-radius: 8px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  position: relative;
+}
+
+.bee-square:hover {
+  background: #ffffff10;
+  border-color: #ffffff35;
+}
+
+.bee-square i {
+  color: #e8bd63;
+  background: #312619;
+  border: 1px solid #d4a74255;
+  border-radius: 5px;
+  min-width: 15px;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 15px;
+  position: absolute;
+  top: -5px;
+  right: -4px;
+}
+
+.bee-list-card {
+  background: #030303;
+  border: 1px solid #ffffff18;
+  border-radius: 8px;
+  min-width: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 32px #0006;
+}
+
+.bee-list-card .table-wrap {
+  scrollbar-width: thin;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.bee-theme .bee-table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+  min-width: 620px;
+  font-size: 13px;
+}
+
+.bee-theme .bee-table th {
+  color: #8a8a8e;
+  letter-spacing: 0;
+  text-transform: none;
+  background: #101010;
+  border-bottom: 1px solid #ffffff08;
+  height: 35px;
+  padding: 7px 9px;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.bee-theme .bee-table td {
+  color: #c7c7cc;
+  vertical-align: middle;
+  border-bottom: 1px solid #ffffff09;
+  height: 40px;
+  padding: 9px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.bee-theme .bee-table td b {
+  color: #dedee1;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.bee-theme .bee-table tbody tr:hover {
+  background: #ffffff04;
+}
+
+.bee-theme .bee-table td:last-child, .bee-theme .bee-table th:last-child {
+  text-align: right;
+}
+
+.bee-theme .bee-table small {
+  color: #85858e;
+  margin-top: 2px;
+  font-size: 10px;
+  line-height: 1.5;
+  display: block;
+}
+
+.bee-theme .bee-table .owner-package-name {
+  min-width: 180px;
+}
+
+.bee-status {
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+}
+
+.bee-status.enabled {
+  color: #00d69c;
+  background: #00bc8910;
+  border-color: #00b98a80;
+}
+
+.bee-status.disabled {
+  color: #fb7185;
+  background: #fb718508;
+  border-color: #fb718550;
+}
+
+.bee-actions, .bee-list-screen .owner-row-actions {
+  white-space: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.bee-actions > a, .bee-actions > button {
+  cursor: pointer;
+  color: #b8bbc4;
+  background: none;
+  border: 0;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.bee-actions .edit, .bee-list-screen .owner-table-action {
+  color: #ffd000;
+  background: none;
+  border: 0;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.bee-actions .delete, .bee-list-screen .owner-table-action.delete {
+  color: #ff4d7c;
+}
+
+.bee-list-screen .owner-table-action.add {
+  color: #dedee1;
+}
+
+.bee-list-footer {
+  color: #78787f;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 14px 16px;
+  font-size: 12px;
+  display: flex;
+}
+
+.bee-list-footer b {
+  color: #ddd;
+}
+
+.bee-list-footer > div {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.bee-theme .bee-list-footer select {
+  background: #0d0d0e;
+  min-width: 65px;
+  height: 31px;
+  padding: 4px 9px;
+  font-size: 12px;
+}
+
+.bee-pagination {
+  color: #ddd;
+  background: #0d0d0e;
+  border: 1px solid #ffffff18;
+  border-radius: 7px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  min-width: 110px;
+  padding: 0 3px;
+  display: flex;
+}
+
+.bee-theme .bee-pagination .btn {
+  color: #bbb;
+  background: none;
+  border: 0;
+  height: 30px;
+  min-height: 30px;
+  padding: 5px;
+}
+
+.bee-theme .bee-pagination .btn:disabled {
+  opacity: .25;
+}
+
+.bee-filters {
+  z-index: 45;
+  background: #171719;
+  border: 1px solid #ffffff18;
+  border-radius: 9px;
+  flex-direction: column;
+  gap: 12px;
+  width: 310px;
+  max-width: 100%;
+  padding: 16px;
+  display: flex;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  box-shadow: 0 12px 40px #0009;
+}
+
+.bee-filters header, .bee-filters .owner-filter-title {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.bee-filters header .text-button {
+  color: #e39999;
+  margin-left: auto;
+}
+
+.bee-filters .field {
+  gap: 6px;
+  margin: 0;
+}
+
+.bee-filters .field > span {
+  font-size: 12px;
+}
+
+.bee-list-hint {
+  color: #92929a;
+  margin: -3px 0 0;
+  font-size: 12px;
+}
+
+.bee-package-picker {
+  flex-direction: column;
+  max-height: 55vh;
+  margin-top: 15px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.bee-package-picker > a {
+  border-bottom: 1px solid #ffffff12;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.bee-package-picker > a > span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.bee-package-picker small {
+  color: #92929a;
+  margin-top: 3px;
+  font-size: 11px;
+  display: block;
+}
+
+.bee-theme .shop-editor-layout > section.card {
+  box-shadow: none;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.bee-theme .shop-editor-layout {
+  grid-template-columns: minmax(0, 1fr) 275px;
+  gap: 24px;
+}
+
+.bee-theme .shop-product-form .form-footer {
+  padding-bottom: max(12px,env(safe-area-inset-bottom));
+}
+
+@media (max-width: 1000px) {
+  .bee-theme .shop-editor-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bee-theme .shop-editor-layout > aside {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    display: grid;
+  }
+}
+
+@media (max-width: 639px) {
+  .bee-list-screen {
+    gap: 12px;
+  }
+
+  .bee-list-toolbar {
+    gap: 7px;
+  }
+
+  .bee-list-toolbar .search-box {
+    flex: 1;
+    width: auto;
+  }
+
+  .bee-theme .bee-table th, .bee-theme .bee-table td {
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+
+  .bee-theme .bee-table td b {
+    font-size: 12px;
+  }
+
+  .bee-theme .bee-table {
+    min-width: 600px;
+  }
+
+  .bee-list-footer {
+    gap: 8px;
+    padding: 12px 10px;
+    font-size: 11px;
+  }
+
+  .bee-list-footer > div {
+    gap: 8px;
+  }
+
+  .bee-theme .bee-list-footer select {
+    min-width: 55px;
+    font-size: 12px;
+  }
+
+  .bee-pagination {
+    min-width: 95px;
+  }
+
+  .bee-theme .shop-editor-layout > aside {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .bee-theme .bee-filters input, .bee-theme .bee-filters select {
+    font-size: 16px;
+  }
+
+  .bee-filters {
+    padding: 13px;
+  }
+
+  .bee-actions {
+    gap: 12px;
+  }
+
+  .bee-list-screen .owner-server-legend {
+    gap: 8px;
+  }
+}
+
+/*# sourceMappingURL=src_app_owner-lists_css_1igg3k2-ikub5._.single.css.map*/

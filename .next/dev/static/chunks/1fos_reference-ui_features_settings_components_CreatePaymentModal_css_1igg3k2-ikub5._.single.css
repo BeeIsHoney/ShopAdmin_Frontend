@@ -1,0 +1,464 @@
+/* [project]/src/reference-ui/features/settings/components/CreatePaymentModal.css [app-client] (css) */
+.payment-editor-backdrop {
+  z-index: 120;
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #000000bf;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.payment-editor-backdrop *, .payment-editor-backdrop :before, .payment-editor-backdrop :after {
+  box-sizing: border-box;
+}
+
+.payment-editor-backdrop .payment-editor-scrim {
+  cursor: default;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.payment-editor {
+  z-index: 1;
+  -webkit-user-select: text;
+  user-select: text;
+  color: #fff;
+  text-align: left;
+  background: #121212;
+  border: 1px solid #ffffff26;
+  border-radius: 12px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  max-height: min(90dvh, 100dvh - 24px);
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px #000000d9;
+}
+
+.payment-editor .payment-editor-header {
+  background: #ffffff05;
+  border-bottom: 1px solid #ffffff1a;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  display: flex;
+}
+
+.payment-editor .payment-editor-header h2 {
+  color: #fff;
+  letter-spacing: -.025em;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.payment-editor button {
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+
+.payment-editor button:focus-visible {
+  outline-offset: 3px;
+  outline: 2px solid #fff;
+}
+
+.payment-editor .payment-editor-close {
+  color: #fff6;
+  background: none;
+  border: 0;
+  border-radius: 8px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  display: flex;
+}
+
+.payment-editor .payment-editor-close:hover {
+  color: #fff;
+  background: #ffffff1a;
+}
+
+.payment-editor .payment-editor-form {
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+  flex: 1;
+  min-height: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.payment-editor .payment-editor-form > * + * {
+  margin-top: 16px;
+}
+
+.payment-editor .payment-editor-field > label {
+  color: #ffffffb3;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+}
+
+.payment-editor .payment-editor-hint {
+  color: #fff6;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.payment-editor .payment-editor-required {
+  color: #ef4444;
+}
+
+.payment-editor .payment-editor-input {
+  color: #fff;
+  background: #00000080;
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  transition: border-color .15s;
+  display: block;
+  box-shadow: inset 0 2px 4px #0000000d;
+}
+
+.payment-editor .payment-editor-input::placeholder {
+  color: #ffffff4d;
+  opacity: 1;
+}
+
+.payment-editor .payment-editor-input:focus {
+  border-color: #ffffff4d;
+  outline: none;
+}
+
+.payment-editor .payment-editor-image-section {
+  border-top: 1px solid #ffffff0d;
+  padding-top: 8px;
+}
+
+.payment-editor .payment-editor-section-label {
+  color: #fffc;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+}
+
+.payment-editor .payment-editor-section-label > svg {
+  color: #fff9;
+  flex-shrink: 0;
+}
+
+.payment-editor .payment-editor-upload {
+  color: #ffffff80;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background: #ffffff05;
+  border: 1px dashed #fff3;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  padding: 12px;
+  font-size: 12px;
+  display: flex;
+}
+
+.payment-editor .payment-editor-upload > svg {
+  color: #fff6;
+}
+
+.payment-editor .payment-editor-upload:hover {
+  color: #fffc;
+  background: #ffffff0a;
+  border-color: #fff6;
+}
+
+.payment-editor .payment-editor-file-input {
+  display: none;
+}
+
+.payment-editor .payment-editor-preview {
+  background: #0006;
+  border: 1px solid #ffffff26;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding: 8px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.payment-editor .payment-editor-qr-preview {
+  width: 128px;
+  height: 128px;
+}
+
+.payment-editor .payment-editor-logo-preview {
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
+}
+
+.payment-editor .payment-editor-preview > img {
+  object-fit: contain;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.payment-editor .payment-editor-image-actions {
+  background: #000000b3;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.payment-editor .payment-editor-qr-actions {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.payment-editor .payment-editor-image-actions button {
+  color: #fff;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #fff3;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.payment-editor .payment-editor-qr-actions button {
+  width: 100%;
+}
+
+.payment-editor .payment-editor-image-actions button:hover {
+  background: #ffffff4d;
+}
+
+.payment-editor .payment-editor-image-actions .payment-editor-remove {
+  color: #fda4af;
+  background: #f43f5e33;
+}
+
+.payment-editor .payment-editor-image-actions .payment-editor-remove:hover {
+  background: #f43f5e4d;
+}
+
+.payment-editor .payment-editor-status {
+  border-top: 1px solid #ffffff0d;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-block: 8px;
+  display: flex;
+}
+
+.payment-editor .payment-editor-status > label {
+  color: #ffffffb3;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.payment-editor .payment-editor-toggle {
+  cursor: pointer;
+  flex-shrink: 0;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+}
+
+.payment-editor .payment-editor-toggle input {
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.payment-editor .payment-editor-toggle > span {
+  background: #ffffff1a;
+  border-radius: 999px;
+  width: 36px;
+  height: 20px;
+  transition: background-color .15s;
+  display: block;
+}
+
+.payment-editor .payment-editor-toggle > span:after {
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: transform .15s;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.payment-editor .payment-editor-toggle input:checked + span {
+  background: #10b981;
+}
+
+.payment-editor .payment-editor-toggle input:checked + span:after {
+  transform: translateX(16px);
+}
+
+.payment-editor .payment-editor-toggle input:focus-visible + span {
+  outline-offset: 3px;
+  outline: 2px solid #fff;
+}
+
+.payment-editor .payment-editor-error {
+  color: #fda4af;
+  overflow-wrap: anywhere;
+  background: #f43f5e1a;
+  border: 1px solid #f43f5e33;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 11px;
+}
+
+.payment-editor .payment-editor-actions {
+  border-top: 1px solid #ffffff1a;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  display: flex;
+}
+
+.payment-editor .payment-editor-cancel {
+  color: #ffffffb3;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.payment-editor .payment-editor-cancel:hover {
+  color: #fff;
+  background: #ffffff1a;
+  border-color: #fff3;
+}
+
+.payment-editor .payment-editor-submit {
+  color: #000;
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+.payment-editor .payment-editor-submit:hover {
+  background: #ffffffe6;
+}
+
+.payment-editor .payment-editor-submit:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.payment-editor .payment-editor-saving {
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.payment-editor .payment-editor-saving > svg {
+  animation: 1s linear infinite payment-editor-spin;
+}
+
+@keyframes payment-editor-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .payment-editor-backdrop {
+    padding: 16px;
+  }
+
+  .payment-editor .payment-editor-header h2 {
+    font-size: 18px;
+  }
+}
+
+@media (hover: hover) {
+  .payment-editor .payment-editor-image-actions {
+    opacity: 0;
+    transition: opacity .15s;
+  }
+
+  .payment-editor .payment-editor-preview:hover .payment-editor-image-actions, .payment-editor .payment-editor-preview:focus-within .payment-editor-image-actions {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .payment-editor *, .payment-editor :after {
+    transition: none;
+  }
+
+  .payment-editor .payment-editor-saving > svg {
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=1fos_reference-ui_features_settings_components_CreatePaymentModal_css_1igg3k2-ikub5._.single.css.map*/

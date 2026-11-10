@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/website-settings.css"],"sourcesContent":[".website-settings-card { margin-bottom:20px; }\n.website-feature-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px; }\n.website-feature { display:flex; align-items:center; gap:12px; padding:14px; border:1px solid var(--border,rgba(255,255,255,.1)); border-radius:12px; cursor:pointer; }\n.website-feature>span { display:flex; flex:1; flex-direction:column; gap:5px; min-width:0; }\n.website-feature small { opacity:.65; }\n.website-feature input { width:18px; height:18px; flex-shrink:0; }\n.website-feature.is-locked { opacity:.58; cursor:default; }\n.website-feature.is-locked input { cursor:not-allowed; }\n@media(max-width:640px) { .website-feature-grid { grid-template-columns:1fr; } }\n"],"names":[],"mappings":"AAAA;;;;AACA;;;;;;;AACA;;;;;;;;;;AACA;;;;;;;;AACA;;;;AACA;;;;;;AACA;;;;;AACA;;;;AACA;EAA0B"}}]
+}

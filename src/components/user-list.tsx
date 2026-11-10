@@ -11,11 +11,13 @@ import type {UserFilterState,UserItem} from '@/reference-ui/features/users/types
 import {displayName} from '@/reference-ui/shared/utils/displayName';
 import {useData,usePanel} from './context';
 import {ErrorBox} from './ui';
+import {ShopIpBans} from './customer-security';
 
 const initialFilters:UserFilterState={plan:'all',showBanned:false,sort:'newest'};
 
 export function UserList(){
  const {profile,cache,invalidate,notify}=usePanel();
+ const [ipBansOpen,setIpBansOpen]=useState(false);
  const [page,setPage]=useState(0),[size,setSize]=useState(10);
  const [query,setQuery]=useState(''),[search,setSearch]=useState('');
  const [filters,setFilters]=useState<UserFilterState>(initialFilters),[filterOpen,setFilterOpen]=useState(false);
@@ -37,6 +39,8 @@ export function UserList(){
    </div>
   </div>
   {(result.error||result.refreshError)&&<ErrorBox message={result.error||result.refreshError} retry={invalidate}/>}
+  <button className="customer-ip-toggle" type="button" aria-expanded={ipBansOpen} onClick={()=>setIpBansOpen(v=>!v)}>IP blacklist</button>
+  {ipBansOpen&&<ShopIpBans/>}
   <section className="card-container w-full overflow-hidden" aria-busy={result.loading}>
    <div className="w-full overflow-x-auto custom-scrollbar">
     <table className="w-full text-left text-[11px] md:text-sm whitespace-nowrap">

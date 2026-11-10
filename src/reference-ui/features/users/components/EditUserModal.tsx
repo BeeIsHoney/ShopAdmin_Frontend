@@ -1,6 +1,7 @@
 import { displayName } from '../../../shared/utils/displayName';
 
 import React from 'react';
+import {CustomerSecurity} from '@/components/customer-security';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useModalBehavior } from '../../../shared/hooks/useModalBehavior';
@@ -87,6 +88,7 @@ export const EditUserModal: React.FC<EditUserModalProps> = ({
               </div>
             </div>
 
+            <CustomerSecurity userId={user.id}/>
             <dl className="grid grid-cols-2 gap-3 text-xs"><div className="rounded-lg border border-white/10 p-3"><dt className="text-white/40">Customer ID</dt><dd className="mt-1 text-white">{user.id}</dd></div><div className="rounded-lg border border-white/10 p-3"><dt className="text-white/40">Total spent</dt><dd className="mt-1 text-white">{Number(user.totalSpent??0).toLocaleString()} Ks</dd></div></dl>
           </div>
         </motion.div>

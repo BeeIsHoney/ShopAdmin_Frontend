@@ -1,0 +1,758 @@
+/* [project]/src/app/admin-theme.css [app-client] (css) */
+:root[data-admin-theme="blue-glass"] {
+  --lightningcss-light: ;
+  --lightningcss-dark: initial;
+  color-scheme: dark;
+  --bg: #081220;
+  --panel: #101f33;
+  --panel-2: #14263d;
+  --border: #94b5e02b;
+  --text: #edf4ff;
+  --muted: #9aacc4;
+  --accent: #3b82f6;
+  --accent-bg: #3b82f621;
+  --glass-surface: #101f33d1;
+  --glass-field: #0b192b;
+  --glass-hover: #60a5fa17;
+  --glass-shadow: 0 8px 24px #0007132e;
+}
+
+html[data-admin-theme="blue-glass"] body {
+  background-color: var(--bg);
+  color: var(--text);
+  background-image: radial-gradient(at 80% 0, #3b82f612, #0000 60%);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme {
+  --accent: #3b82f6;
+  --accent-bg: #3b82f621;
+}
+
+html[data-admin-theme="blue-glass"] ::selection {
+  color: #fff;
+  background: #3b82f659;
+}
+
+html[data-admin-theme="blue-glass"] :focus-visible {
+  outline-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(input, textarea, select, .oc-input) {
+  background-color: var(--glass-field);
+  border-color: var(--border);
+  color: var(--text);
+  box-shadow: none;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(input, textarea)::placeholder {
+  color: #859ab6;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(input, textarea, select, .oc-input):focus {
+  border-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(input[type="checkbox"], input[type="radio"]) {
+  accent-color: var(--accent);
+}
+
+html[data-admin-theme="blue-glass"] option {
+  color: var(--text);
+  background: #101f33;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.btn, .oc-btn, .oc-iconbtn, .bee-square, .owner-filter-btn) {
+  border-color: var(--border);
+  color: #d8e7fc;
+  box-shadow: none;
+  background: #60a5fa12;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.btn, .oc-btn, .oc-iconbtn, .bee-square, .owner-filter-btn):hover:not(:disabled) {
+  background: #60a5fa24;
+  border-color: #60a5fa66;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.btn.primary, .oc-btn.primary) {
+  color: #fff;
+  box-shadow: none;
+  background: #2563eb;
+  border-color: #3b82f6;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.btn.primary, .oc-btn.primary):hover:not(:disabled) {
+  background: #1d4ed8;
+  border-color: #2563eb;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .btn.danger {
+  color: #fda4af;
+  background: #f43f5e1a;
+  border-color: #fb71854d;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .brand > b {
+  -webkit-text-fill-color: currentColor;
+  color: #edf4ff;
+  background: none;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .brand-dot {
+  color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .brand > small {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .sidebar {
+  border-color: var(--border);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  background: #091526f5;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .topbar {
+  border-color: var(--border);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #081220eb;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .sidebar nav a {
+  color: #a9bbd3;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .sidebar nav a:hover {
+  background: var(--glass-hover);
+  color: #edf4ff;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .sidebar nav a.active {
+  color: #bfdbfe;
+  box-shadow: none;
+  background: #3b82f626;
+  border-color: #3b82f657;
+}
+
+html[data-admin-theme="blue-glass"] .owner-nav-heading {
+  color: #b8c9df;
+}
+
+html[data-admin-theme="blue-glass"] .owner-nav-heading:hover {
+  background: var(--glass-hover);
+  color: #edf4ff;
+}
+
+html[data-admin-theme="blue-glass"] .owner-nav-heading > svg:last-child {
+  color: #8ca4c3;
+}
+
+html[data-admin-theme="blue-glass"] .owner-page-heading h1 {
+  color: #e2edff;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.connection-box, .balance-pill) {
+  border-color: var(--border);
+  color: #cfdef4;
+  background: #3b82f60d;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .connection-box b {
+  color: #c0d0e6;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.connection-box small, .balance-pill span, .page-footer) {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .avatar {
+  color: #bfdbfe;
+  box-shadow: none;
+  background: #3b82f62b;
+  border-color: #60a5fa4d;
+}
+
+html[data-admin-theme="blue-glass"] .owner-profile-menu {
+  border-color: var(--border);
+  box-shadow: var(--glass-shadow);
+  background: #101f33;
+}
+
+html[data-admin-theme="blue-glass"] .owner-profile-menu :is(a, button) {
+  color: #c7d7ed;
+}
+
+html[data-admin-theme="blue-glass"] .owner-profile-menu :is(a, button):hover {
+  background: var(--glass-hover);
+}
+
+html[data-admin-theme="blue-glass"] .owner-profile-menu small {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.card, .stat, .quick-card, .bee-list-card, .oc-table-card) {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: var(--glass-shadow);
+}
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  html[data-admin-theme="blue-glass"] .bee-theme :is(.card, .stat, .quick-card, .bee-list-card, .oc-table-card) {
+    background: var(--glass-surface);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .shop-editor-layout > section.card {
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: none;
+  border: 0;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.section-head h2, .stat-top, .oc-field > span, .field > span, .oc-table td > b, .oc-item-label b) {
+  color: #cfdef4;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.page-title p, .section-head p, .field small, .oc-field > small, .oc-header p, .oc-item-label small, .oc-table td > small, .table-note, .empty p, .card-footnote) {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.text-link, .text-button, .oc-link, .oc-back, .owner-table-action.add) {
+  color: #93c5fd;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.text-link, .text-button, .oc-back):hover {
+  color: #dbeafe;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .icon-btn {
+  color: #9fb5d3;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .icon-btn:hover {
+  color: #e2edff;
+  background: var(--glass-hover);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.search-box, .bee-list-toolbar .search-box, .segmented) {
+  background: var(--glass-field);
+  border-color: var(--border);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .search-box input {
+  background: none;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .search-box:focus-within {
+  border-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .segmented button {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .segmented button.active {
+  color: #bfdbfe;
+  background: var(--accent-bg);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(th, .oc-table th, .bee-table th) {
+  color: #a6bad6;
+  border-color: var(--border);
+  background: #60a5fa0b;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(td, .oc-table td, .bee-table td) {
+  border-color: #94b5e01a;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(td small, .bee-table small) {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(tbody tr:hover, .oc-table tbody tr:hover, .bee-table tbody tr:hover) {
+  background: #60a5fa0b;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .bee-table td {
+  color: #c3d3e9;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .bee-table td b {
+  color: #e2edff;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.bee-list-footer, .owner-table-footer, .opg-pagination) {
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.bee-pagination, .opg-pager, .opg-size select) {
+  background: var(--glass-field);
+  border-color: var(--border);
+  color: #d8e7fc;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.bee-filters, .oc-filters, .oc-combo-menu, .owner-filter-panel, .opg-modal, .modal) {
+  border-color: var(--border);
+  box-shadow: var(--glass-shadow);
+  background: #101f33;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .oc-combo-options > button {
+  color: #bccfe9;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .oc-combo-options > button:is(:hover, [aria-selected="true"]) {
+  background: var(--accent-bg);
+  color: #e2edff;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.notice, .oc-info, .oc-inline-note, .oc-hint, .oc-manual-field, .oc-price, .opg-package-box, .shop-source-summary, .shop-price-preview, .balance-display, .purchase-summary) {
+  border-color: var(--border);
+  color: #b8cce7;
+  background: #3b82f60e;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .notice > svg {
+  color: #93c5fd;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.shop-product-symbol, .shop-icon, .package-icon, .provider-tag, .oc-chip) {
+  background: var(--accent-bg);
+  color: #c0daff;
+  border-color: var(--border);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .badge {
+  border-color: var(--border);
+  color: #b9cce7;
+  background: #94b5e014;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.badge.active, .badge.completed, .badge.success, .badge.added) {
+  color: #6ee7b7;
+  background: #34d39914;
+  border-color: #34d39940;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.badge.pending, .badge.processing) {
+  color: #fcd58b;
+  background: #f59e0b14;
+  border-color: #f59e0b40;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme :is(.badge.failed, .badge.rejected, .badge.disabled, .badge.revoked, .badge.out-of-stock) {
+  color: #fda4af;
+  background: #fb718514;
+  border-color: #fb718540;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .badge.refunded {
+  color: #c4b5fd;
+  background: #a78bfa14;
+  border-color: #a78bfa40;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .opg-package-options button {
+  border-color: var(--border);
+  background: #60a5fa0a;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .opg-package-options button[aria-pressed="true"] {
+  background: var(--accent-bg);
+  border-color: #60a5fa80;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .opg-tick.checked {
+  color: #fff;
+  background: #3b82f6;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .owner-bulk-toolbar {
+  background: #3b82f60d;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .empty > span {
+  background: var(--accent-bg);
+  color: #8faed7;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .modal-backdrop {
+  background: #020812c7;
+}
+
+html[data-admin-theme="blue-glass"] .owner-login {
+  background: none;
+}
+
+html[data-admin-theme="blue-glass"] .terminal-card {
+  background: var(--glass-surface);
+  border-color: var(--border);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 50px #0006124d;
+}
+
+html[data-admin-theme="blue-glass"] :is(.terminal-browser, .browser-address) {
+  border-color: var(--border);
+  background: #3b82f60a;
+}
+
+html[data-admin-theme="blue-glass"] .terminal-heading > p b {
+  color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] :is(.login-description, .owner-login .login-help, .owner-login-footer, .browser-address) {
+  color: var(--muted);
+}
+
+html[data-admin-theme="blue-glass"] .owner-login .setup-status {
+  border-color: var(--border);
+  background: #3b82f60a;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .login-input input {
+  background: var(--glass-field);
+  border-color: var(--border);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .login-input input:focus {
+  border-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .login-input.password-field {
+  background: var(--glass-field);
+  border-color: var(--border);
+}
+
+html[data-admin-theme="blue-glass"] .bee-theme .login-input.password-field:focus-within {
+  border-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) {
+  color: var(--text);
+}
+
+html[data-admin-theme="blue-glass"] .finance-check-page {
+  background: var(--bg);
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(.card-container, [class~="bg-black/40"]) {
+  background-color: var(--glass-surface);
+  border-color: var(--border);
+  box-shadow: var(--glass-shadow);
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is([role="dialog"], [class~="bg-[#0d0d0d]"], [class~="bg-[#111111]"], [class~="bg-[#121212]"], [class~="bg-[#141414]"], [class~="bg-[#161616]"], [class~="bg-[#181818]"]) {
+  border-color: var(--border);
+  background-color: #101f33;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(input, textarea, select) {
+  background-color: var(--glass-field);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(input, textarea, select):focus {
+  border-color: #60a5fa;
+  outline-color: #60a5fa;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(input, textarea)::placeholder {
+  color: #859ab6;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) input[class~="pl-9"] {
+  padding-left: 2.25rem;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) input[class~="pr-9"] {
+  padding-right: 2.25rem;
+}
+
+html[data-admin-theme="blue-glass"] .reference-payment-ui input.peer:checked + div {
+  background-color: #2563eb;
+}
+
+html[data-admin-theme="blue-glass"] .reference-payment-ui input.peer:checked + div:after {
+  background-color: #eff6ff;
+  border-color: #eff6ff;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(.glass-effect-btn, button[class~="bg-white/5"], button[class~="bg-white/10"]) {
+  border-color: var(--border);
+  color: #d8e7fc;
+  box-shadow: none;
+  background-color: #60a5fa12;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(.glass-effect-btn, button[class~="bg-white/5"], button[class~="bg-white/10"]):hover:not(:disabled) {
+  background-color: #60a5fa24;
+  border-color: #60a5fa66;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(.ultimate-3d-btn, button[class~="bg-white"], a[class~="bg-white"]) {
+  color: #fff;
+  box-shadow: none;
+  background: #2563eb;
+  border-color: #3b82f6;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is(.ultimate-3d-btn, button[class~="bg-white"], a[class~="bg-white"]):hover:not(:disabled) {
+  box-shadow: none;
+  background: #1d4ed8;
+  border-color: #2563eb;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is([class~="text-white/30"], [class~="text-white/40"], [class~="text-white/45"], [class~="text-white/50"]) {
+  color: #9aacc4;
+}
+
+html[data-admin-theme="blue-glass"] :is(#reference-finance-scope, .reference-finance-ui, .reference-payment-ui) :is([class~="border-white/10"], [class~="border-white/15"]) {
+  border-color: var(--border);
+}
+
+.appearance-page {
+  max-width: 850px;
+}
+
+.appearance-card h2 {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.appearance-options {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  display: grid;
+}
+
+.theme-option {
+  cursor: pointer;
+  min-width: 0;
+  position: relative;
+}
+
+.theme-option > input {
+  opacity: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.theme-option-content {
+  border: 1px solid var(--border);
+  background: #ffffff05;
+  border-radius: 9px;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 12px;
+  display: flex;
+}
+
+.theme-option:hover .theme-option-content {
+  border-color: var(--muted);
+}
+
+.theme-option > input:checked + .theme-option-content {
+  border-color: var(--accent);
+}
+
+.theme-option > input:focus-visible + .theme-option-content {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.theme-option-heading {
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  display: flex;
+}
+
+.theme-option-heading small {
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 9px;
+}
+
+.theme-selected {
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  margin-left: auto;
+  display: grid;
+}
+
+.theme-option > input:checked + .theme-option-content .theme-selected {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+html[data-admin-theme="blue-glass"] .theme-option > input:checked + .theme-option-content .theme-selected {
+  color: #fff;
+}
+
+.theme-description {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.appearance-note {
+  color: var(--muted);
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+.appearance-sr-only {
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.theme-preview {
+  border: 1px solid var(--preview-border);
+  background: var(--preview-bg);
+  border-radius: 6px;
+  gap: 8px;
+  height: 132px;
+  padding: 9px;
+  display: flex;
+  overflow: hidden;
+}
+
+.preview-blue-glass {
+  --preview-bg: #081220;
+  --preview-panel: #12243b;
+  --preview-border: #28415f;
+  --preview-accent: #3b82f6;
+}
+
+.preview-original {
+  --preview-bg: #050505;
+  --preview-panel: #161618;
+  --preview-border: #333338;
+  --preview-accent: #eee;
+}
+
+.preview-sidebar {
+  border-right: 1px solid var(--preview-border);
+  flex-direction: column;
+  gap: 9px;
+  width: 25%;
+  padding: 10px 8px 0 0;
+  display: flex;
+}
+
+.preview-sidebar i {
+  background: var(--preview-border);
+  border-radius: 2px;
+  height: 5px;
+}
+
+.preview-sidebar i:first-child {
+  background: var(--preview-accent);
+}
+
+.preview-main {
+  flex-direction: column;
+  flex: 1;
+  gap: 9px;
+  min-width: 0;
+  display: flex;
+}
+
+.preview-header {
+  border-bottom: 1px solid var(--preview-border);
+  height: 11px;
+}
+
+.preview-stats {
+  gap: 7px;
+  display: flex;
+}
+
+.preview-stats i {
+  border: 1px solid var(--preview-border);
+  background: var(--preview-panel);
+  border-radius: 4px;
+  flex: 1;
+  height: 30px;
+}
+
+.preview-table {
+  border: 1px solid var(--preview-border);
+  background: var(--preview-panel);
+  border-radius: 4px;
+  flex-direction: column;
+  flex: 1;
+  gap: 7px;
+  padding: 8px;
+  display: flex;
+}
+
+.preview-table i {
+  background: var(--preview-border);
+  border-radius: 2px;
+  width: 80%;
+  height: 3px;
+}
+
+.preview-table i:last-child {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  html[data-admin-theme="blue-glass"] .bee-theme :is(.shop-product-form > .form-footer, .shop-pricing-form > .form-footer, .oc-submit) {
+    background: #081220;
+  }
+
+  html[data-admin-theme="blue-glass"] .bee-theme .shop-package-form > .form-footer {
+    background: #101f33;
+  }
+
+  html[data-admin-theme="blue-glass"] .bee-theme :is(.card, .stat, .bee-list-card, .oc-table-card) {
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .appearance-options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .theme-preview {
+    height: 115px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-admin-theme="blue-glass"] :is(.btn, .oc-btn, .sidebar, .main-column, .owner-nav-heading > svg, .glass-effect-btn) {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_admin-theme_css_1igg3k2-ikub5._.single.css.map*/

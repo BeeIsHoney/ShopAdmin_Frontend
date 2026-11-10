@@ -1,3 +1,10 @@
 {
-  "/[[...slug]]/page": "app/[[...slug]]/page.js"
+  "/[[...slug]]/page": "app/[[...slug]]/page.js",
+  "/api/backend/[...path]/route": "app/api/backend/[...path]/route.js",
+  "/api/connection/route": "app/api/connection/route.js",
+  "/api/events/route": "app/api/events/route.js",
+  "/api/session/otp/route": "app/api/session/otp/route.js",
+  "/api/session/route": "app/api/session/route.js",
+  "/recharge-list/[reference]/page": "app/recharge-list/[reference]/page.js",
+  "/recharge-list/page": "app/recharge-list/page.js"
 }

@@ -1,0 +1,335 @@
+/* [project]/src/app/customer-management.css [app-client] (css) */
+.reference-users-ui {
+  min-width: 0;
+}
+
+.reference-users-ui table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reference-users-ui th, .reference-users-ui td {
+  vertical-align: middle;
+}
+
+.reference-users-ui footer select option {
+  color: #fff;
+  background: #111827;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-content {
+  gap: 16px;
+  max-width: 1180px;
+}
+
+.finance-detail-layout {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  display: grid;
+}
+
+.finance-detail-column {
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  display: flex;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-card {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: #0006;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px #00000040;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-header {
+  gap: 12px;
+  padding: 12px 16px;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-header :is(h1, h2) {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-row :is(th, td) {
+  overflow-wrap: anywhere;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-row th {
+  width: 38%;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-row td {
+  width: 62%;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-ban {
+  letter-spacing: .04em;
+  background: #e11d48;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+:is(#reference-finance-scope, .reference-finance-ui) .finance-detail-ban.is-banned {
+  color: #fff;
+  background: #059669;
+}
+
+.finance-recent-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+}
+
+.finance-recent-table :is(th, td) {
+  border-bottom: 1px solid #ffffff1a;
+  border-right: 1px solid #ffffff1a;
+  padding: 10px 16px;
+}
+
+.finance-recent-table th {
+  background: #ffffff05;
+  font-weight: 700;
+}
+
+.finance-recent-table td a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.finance-recent-table td a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1536px) {
+  .finance-detail-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px) {
+  :is(#reference-finance-scope, .reference-finance-ui) .finance-detail-row :is(th, td) {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .finance-recent-table :is(th, td) {
+    padding: 9px 12px;
+  }
+}
+
+.user-status-overlay {
+  z-index: 120;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: #000000bf;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.user-status-overlay > .user-status-dialog {
+  z-index: 1;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 360px;
+  max-height: calc(100dvh - 32px);
+  font-family: Inter, ui-sans-serif, Myanmar Text, Noto Sans Myanmar, system-ui, sans-serif;
+  position: relative;
+  overflow: auto;
+}
+
+.user-status-dialog h3 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.user-status-dialog p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.user-status-dialog .ultimate-3d-btn {
+  min-width: 80px;
+  height: 34px;
+  font-size: 13px;
+}
+
+.customer-security {
+  border-top: 1px solid var(--border, #ffffff20);
+  min-width: 0;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.customer-security h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.customer-security-help {
+  color: #94a3b8;
+  margin: 4px 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.customer-ip-row {
+  border-bottom: 1px solid #ffffff12;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.customer-ip-row > div {
+  min-width: 0;
+}
+
+.customer-ip-row strong {
+  overflow-wrap: anywhere;
+  font: 12px ui-monospace, monospace;
+}
+
+.customer-ip-row small {
+  color: #94a3b8;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  line-height: 1.6;
+  display: block;
+}
+
+.customer-security button, .customer-ip-toggle {
+  color: #e2e8f0;
+  white-space: nowrap;
+  background: #ffffff08;
+  border: 1px solid #ffffff25;
+  border-radius: 7px;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.customer-security button:hover {
+  background: #ffffff12;
+}
+
+.customer-security button.danger {
+  color: #fda4af;
+  background: #fb718510;
+  border-color: #fb718550;
+}
+
+.customer-security button:disabled {
+  opacity: .45;
+}
+
+.customer-ip-form {
+  background: #0002;
+  border: 1px solid #ffffff20;
+  border-radius: 8px;
+  gap: 10px;
+  margin: 12px 0;
+  padding: 14px;
+  display: grid;
+}
+
+.customer-ip-form label {
+  color: #cbd5e1;
+  gap: 6px;
+  font-size: 12px;
+  display: grid;
+}
+
+.customer-ip-form input {
+  min-height: 36px;
+  color: inherit;
+  background: #0003;
+  border: 1px solid #ffffff25;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.customer-ip-form .customer-ip-check {
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+  display: flex;
+}
+
+.customer-ip-check input {
+  flex: 0 0 16px;
+  width: 16px;
+  min-height: 16px;
+  margin-top: 2px;
+}
+
+.customer-security-actions {
+  justify-content: flex-end;
+  gap: 8px;
+  display: flex;
+}
+
+.customer-ip-heading {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.customer-ip-blacklist {
+  background: #0002;
+  border: 1px solid #ffffff20;
+  border-radius: 10px;
+  margin-top: 0;
+  padding: 16px;
+}
+
+.customer-ip-unban {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  display: flex;
+}
+
+.customer-security-error {
+  color: #fda4af;
+  font-size: 12px;
+}
+
+.customer-security-error button {
+  margin-left: 8px;
+}
+
+.customer-ip-toggle {
+  justify-self: start;
+}
+
+@media (max-width: 480px) {
+  .customer-ip-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .customer-ip-form {
+    padding: 10px;
+  }
+
+  .customer-ip-unban {
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=src_app_customer-management_css_1igg3k2-ikub5._.single.css.map*/

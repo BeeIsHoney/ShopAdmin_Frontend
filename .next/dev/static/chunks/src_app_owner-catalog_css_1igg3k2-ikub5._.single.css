@@ -1,0 +1,579 @@
+/* [project]/src/app/owner-catalog.css [app-client] (css) */
+.bee-theme .oc-screen, .bee-theme .oc-editor {
+  color: #e7e7e7;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.bee-theme .oc-screen {
+  gap: 15px;
+  display: grid;
+}
+
+.bee-theme .oc-toolbar {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 11px;
+  display: flex;
+}
+
+.bee-theme .oc-search {
+  flex: 1;
+  min-width: 160px;
+  max-width: 370px;
+  position: relative;
+}
+
+.bee-theme .oc-search > svg {
+  color: #777;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.bee-theme .oc-search input {
+  min-height: 39px;
+  padding-left: 37px;
+}
+
+.bee-theme .oc-search > button {
+  color: #bbb;
+  padding: 3px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.bee-theme .oc-input {
+  color: #eee;
+  background: #0006;
+  border: 1px solid #ffffff1c;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  min-width: 0;
+  height: 39px;
+  padding: 8px 12px;
+  font-size: 13px;
+  box-shadow: 0 8px 28px #00000026;
+}
+
+.bee-theme .oc-input:hover {
+  border-color: #ffffff3b;
+}
+
+.bee-theme .oc-input:focus {
+  border-color: #ffffff61;
+}
+
+.bee-theme .oc-input:disabled {
+  opacity: .6;
+}
+
+.bee-theme textarea.oc-input {
+  resize: vertical;
+  height: auto;
+  min-height: 80px;
+}
+
+.bee-theme .oc-iconbtn {
+  color: #ddd;
+  background: #ffffff0b;
+  border: 1px solid #ffffff20;
+  border-radius: 8px;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  display: grid;
+  position: relative;
+}
+
+.bee-theme .oc-iconbtn:hover, .bee-theme .oc-btn:hover {
+  background: #ffffff17;
+}
+
+.bee-theme .oc-filters {
+  background: #0b0c0ecc;
+  border: 1px solid #ffffff17;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 13px;
+  padding: 16px;
+  display: flex;
+}
+
+.bee-theme .oc-filters > .oc-field {
+  flex: 1;
+  min-width: 140px;
+}
+
+.bee-theme .oc-filters > .oc-btn {
+  min-height: 38px;
+}
+
+.bee-theme .oc-field {
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+  font-size: 12px;
+  display: flex;
+}
+
+.bee-theme .oc-field > span {
+  color: #bfbfbf;
+  font-weight: 520;
+}
+
+.bee-theme .oc-field > span > em {
+  color: #ff6262;
+  margin-left: 3px;
+  font-style: normal;
+}
+
+.bee-theme .oc-field > small {
+  color: #898989;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.bee-theme .oc-table-card {
+  background: #00000052;
+  border: 1px solid #ffffff19;
+  border-radius: 9px;
+  min-width: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 28px #0005;
+}
+
+.bee-theme .oc-table-scroll {
+  scrollbar-width: thin;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.bee-theme .oc-table {
+  border-collapse: collapse;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 12px;
+}
+
+.bee-theme .oc-table th {
+  color: #adadb2;
+  letter-spacing: .03em;
+  background: #ffffff06;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bee-theme .oc-table th, .bee-theme .oc-table td {
+  border-bottom: 1px solid #ffffff12;
+  padding: 14px 13px;
+}
+
+.bee-theme .oc-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.bee-theme .oc-table tbody tr:hover {
+  background: #ffffff06;
+}
+
+.bee-theme .oc-table td > b {
+  color: #f5f5f5;
+  font-weight: 620;
+}
+
+.bee-theme .oc-table td > small {
+  color: #999;
+  margin-top: 5px;
+  font-size: 10px;
+  display: block;
+}
+
+.bee-theme .oc-table .oc-row-actions {
+  align-items: center;
+  gap: 9px;
+  display: flex;
+}
+
+.bee-theme .oc-row-actions > * {
+  color: #ddd;
+  border: 1px solid #ffffff19;
+  border-radius: 6px;
+  place-items: center;
+  width: 30px;
+  height: 29px;
+  display: grid;
+}
+
+.bee-theme .oc-row-actions > .danger {
+  color: #df8c8c;
+}
+
+.bee-theme .oc-row-actions > :hover {
+  background: #ffffff15;
+}
+
+.bee-theme .oc-editor {
+  max-width: 950px;
+}
+
+.bee-theme .oc-header {
+  margin-bottom: 17px;
+}
+
+.bee-theme .oc-header h2 {
+  margin: 5px 0;
+  font-size: 17px;
+  font-weight: 620;
+}
+
+.bee-theme .oc-header p {
+  color: #999;
+  font-size: 11px;
+}
+
+.bee-theme .oc-back {
+  color: #aaa;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+  padding: 6px 0;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+.bee-theme .oc-back:hover {
+  color: #fff;
+}
+
+.bee-theme .oc-form {
+  gap: 16px;
+  max-width: 860px;
+  display: grid;
+}
+
+.bee-theme .oc-form > .oc-field {
+  gap: 7px;
+}
+
+.bee-theme .oc-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  display: grid;
+}
+
+.bee-theme .oc-btn {
+  color: #eee;
+  background: #ffffff0e;
+  border: 1px solid #ffffff24;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+.bee-theme .oc-btn.primary {
+  color: #111;
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+  font-weight: 630;
+}
+
+.bee-theme .oc-btn.primary:hover {
+  background: #fff;
+}
+
+.bee-theme .oc-btn.ghost {
+  color: #bbb;
+  background: #ffffff08;
+}
+
+.bee-theme .oc-submit {
+  border-top: 1px solid #ffffff15;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 7px;
+  padding-top: 17px;
+  display: flex;
+}
+
+.bee-theme .oc-combo {
+  position: relative;
+}
+
+.bee-theme .oc-combo-trigger {
+  text-align: left;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.bee-theme .oc-combo-trigger > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bee-theme .oc-combo-menu {
+  z-index: 60;
+  background: #111214;
+  border: 1px solid #ffffff29;
+  border-radius: 8px;
+  padding: 7px;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  box-shadow: 0 18px 38px #000c;
+}
+
+.bee-theme .oc-combo-menu > input {
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.bee-theme .oc-combo-options {
+  max-height: 220px;
+  display: grid;
+  overflow: auto;
+}
+
+.bee-theme .oc-combo-options > button {
+  text-align: left;
+  color: #bbb;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 12px;
+  display: flex;
+}
+
+.bee-theme .oc-combo-options > button:hover, .bee-theme .oc-combo-options > button[aria-selected="true"] {
+  color: #fff;
+  background: #ffffff12;
+}
+
+.bee-theme .oc-combo-options > small {
+  text-align: center;
+  color: #999;
+  padding: 14px;
+}
+
+.bee-theme .oc-info, .bee-theme .oc-inline-note, .bee-theme .oc-hint {
+  color: #aaa;
+  background: #ffffff06;
+  border: 1px solid #ffffff1b;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.bee-theme .oc-info b {
+  color: #e3e3e3;
+}
+
+.bee-theme .oc-info p {
+  margin: 4px 0 6px;
+}
+
+.bee-theme .oc-chip {
+  color: #ddd;
+  border: 1px solid #ffffff24;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.bee-theme .oc-manual {
+  gap: 13px;
+  display: grid;
+}
+
+.bee-theme .oc-manual-field {
+  background: #0006;
+  border: 1px solid #ffffff17;
+  border-radius: 8px;
+  gap: 13px;
+  padding: 15px;
+  display: grid;
+}
+
+.bee-theme .oc-section-heading {
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  display: flex;
+}
+
+.bee-theme .oc-section-heading > button {
+  width: auto;
+}
+
+.bee-theme .oc-check {
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  display: flex;
+}
+
+.bee-theme .oc-check input {
+  accent-color: #dadada;
+  width: 16px;
+  height: 16px;
+}
+
+.bee-theme .oc-price {
+  background: #ffffff06;
+  border: 1px solid #ffffff15;
+  border-radius: 8px;
+  gap: 4px;
+  padding: 14px;
+  display: grid;
+}
+
+.bee-theme .oc-price span {
+  color: #999;
+  font-size: 11px;
+}
+
+.bee-theme .oc-price strong {
+  color: #eee;
+  font-size: 22px;
+}
+
+.bee-theme .oc-price small {
+  color: #888;
+}
+
+.bee-theme .oc-link {
+  color: #dedede;
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .bee-theme .oc-toolbar {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .bee-theme .oc-search {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .bee-theme .oc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bee-theme .oc-form {
+    gap: 14px;
+  }
+
+  .bee-theme .oc-input {
+    font-size: 16px;
+  }
+
+  .bee-theme .oc-table th, .bee-theme .oc-table td {
+    padding: 12px 10px;
+  }
+
+  .bee-theme .oc-submit {
+    padding: 13px 0 max(12px,env(safe-area-inset-bottom));
+    z-index: 5;
+    background: #0c0d0f;
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+.bee-theme .oc-group-name {
+  align-items: center;
+  gap: 9px;
+  display: flex;
+}
+
+.bee-theme .oc-group-name img {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 26px;
+  height: 26px;
+}
+
+.bee-theme .oc-item-name {
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  display: flex;
+}
+
+.bee-theme .oc-item-icon {
+  color: #8c8c93;
+  background: #ffffff08;
+  border: 1px solid #ffffff19;
+  border-radius: 8px;
+  flex: 0 0 40px;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  overflow: hidden;
+}
+
+.bee-theme .oc-item-icon img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bee-theme .oc-item-label {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  display: flex;
+}
+
+.bee-theme .oc-item-label b {
+  color: #f5f5f5;
+  font-weight: 620;
+}
+
+.bee-theme .oc-item-label small {
+  color: #999;
+  font-size: 10px;
+}
+
+@media (max-width: 700px) {
+  .bee-theme .oc-item-name {
+    gap: 8px;
+  }
+
+  .bee-theme .oc-item-icon {
+    border-radius: 6px;
+    flex-basis: 32px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/*# sourceMappingURL=src_app_owner-catalog_css_1igg3k2-ikub5._.single.css.map*/

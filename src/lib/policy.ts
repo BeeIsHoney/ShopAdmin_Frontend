@@ -1,6 +1,9 @@
 export function permitted(path:string,method:string){
  if(path==='telegram'&&['GET','DELETE'].includes(method))return true;
  if(path==='telegram/link'&&method==='POST')return true;
+ if(path==='users/ip-bans'&&['GET','POST'].includes(method))return true;
+ if(method==='DELETE'&&/^users\/ip-bans\/[a-f0-9-]{36}$/.test(path))return true;
+ if(method==='GET'&&/^users\/[1-9]\d{0,15}\/security$/.test(path))return true;
  if(path.includes('..')||path.includes('\\'))return false;
  if((method==='GET'||method==='PUT')&&path==='website-settings')return true;
  if((method==='GET'||method==='POST')&&path==='banners')return true;

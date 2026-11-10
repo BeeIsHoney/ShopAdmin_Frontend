@@ -1,0 +1,272 @@
+/* [project]/src/app/recharge.css [app-client] (css) */
+.commerce-nav {
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.commerce-nav a {
+  color: #aaa;
+  border: 1px solid #272727;
+  border-radius: 7px;
+  padding: 9px 13px;
+  font-size: 12px;
+}
+
+.commerce-nav a.selected {
+  color: #f2f2f2;
+  background: #202020;
+  border-color: #555;
+}
+
+.recharge-toolbar {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.service-switch {
+  white-space: nowrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  display: flex;
+}
+
+.service-switch input {
+  accent-color: #38bdf8;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+}
+
+.recharge-search {
+  color: #777;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  flex: 1;
+  align-items: center;
+  gap: 7px;
+  min-width: 180px;
+  max-width: 390px;
+  margin-left: auto;
+  padding: 0 10px;
+  display: flex;
+}
+
+.recharge-search input {
+  background: none;
+  border: 0;
+  padding: 10px 0;
+}
+
+.recharge-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  display: grid;
+}
+
+.recharge-card {
+  background: #080808;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.recharge-card header {
+  background: #101010;
+  grid-template-columns: 42% 58%;
+  display: grid;
+}
+
+.recharge-card header > div {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px;
+  display: flex;
+}
+
+.recharge-card header > div + div {
+  border-left: 1px solid #292929;
+}
+
+.recharge-card header small {
+  color: #777;
+  font-size: 10px;
+}
+
+.recharge-card .review-button {
+  color: #8ae3f1;
+  background: #0c262d;
+  border-color: #15576a;
+}
+
+.recharge-person {
+  border-top: 1px solid #292929;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  display: flex;
+}
+
+.recharge-person span {
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+
+.recharge-person svg {
+  color: #e5b56e;
+}
+
+.recharge-person small {
+  color: #888;
+}
+
+.recharge-card dl {
+  margin: 0;
+}
+
+.recharge-card dl > div {
+  border-top: 1px solid #292929;
+  grid-template-columns: 42% 58%;
+  display: grid;
+}
+
+.recharge-card dt, .recharge-card dd {
+  overflow-wrap: anywhere;
+  margin: 0;
+  padding: 9px 12px;
+  font-size: 12px;
+}
+
+.recharge-card dt {
+  color: #aaa;
+  border-right: 1px solid #292929;
+}
+
+.recharge-card .duration-row dt, .recharge-card .duration-row dd {
+  color: #fb7185;
+}
+
+.recharge-review {
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  display: grid;
+}
+
+.recharge-receipt {
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  align-self: start;
+  padding: 8px;
+}
+
+.recharge-receipt img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-height: 65vh;
+  display: block;
+}
+
+.recharge-review .details-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.recharge-review .positive, .recharge-review .negative {
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0;
+  display: flex;
+}
+
+.reference-payment-ui .card-container {
+  background: #080808;
+  border: 1px solid #282828;
+  border-radius: 10px;
+}
+
+.reference-payment-ui .glass-effect-btn {
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.reference-payment-ui .custom-scrollbar {
+  scrollbar-width: thin;
+}
+
+.reference-payment-ui input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+}
+
+.reference-payment-ui .sr-only {
+  width: 1px;
+  padding: 0;
+}
+
+.reference-payment-ui input {
+  box-shadow: none;
+}
+
+.recharge-card .order-card-package {
+  color: #999;
+  margin-top: 6px;
+  font-size: 11px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .recharge-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .recharge-toolbar {
+    gap: 8px;
+  }
+
+  .recharge-search {
+    flex-basis: 100%;
+    order: 3;
+    max-width: none;
+    margin: 0;
+  }
+
+  .recharge-toolbar select {
+    margin-left: auto;
+  }
+
+  .recharge-review {
+    grid-template-columns: 1fr;
+  }
+
+  .recharge-receipt img {
+    max-height: 45vh;
+  }
+
+  .commerce-nav a {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .recharge-card header > div {
+    padding: 10px;
+  }
+
+  .recharge-card dt, .recharge-card dd {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=src_app_recharge_css_1igg3k2-ikub5._.single.css.map*/

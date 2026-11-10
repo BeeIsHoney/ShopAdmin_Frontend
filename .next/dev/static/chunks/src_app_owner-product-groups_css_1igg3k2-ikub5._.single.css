@@ -1,0 +1,390 @@
+/* [project]/src/app/owner-product-groups.css [app-client] (css) */
+.bee-theme .opg-screen {
+  gap: 14px;
+}
+
+.bee-theme .opg-filter-dot {
+  background: #f1f1f1;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  right: 8px;
+}
+
+.bee-theme .opg-center {
+  text-align: center;
+}
+
+.bee-theme .opg-right {
+  text-align: right;
+}
+
+.bee-theme .opg-status {
+  border: 1px solid;
+  border-radius: 50%;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  display: inline-grid;
+}
+
+.bee-theme .opg-status.on {
+  color: #66d5a2;
+  background: #27825616;
+  border-color: #3b896b;
+}
+
+.bee-theme .opg-status.off {
+  color: #ed8594;
+  background: #94394d16;
+  border-color: #a35462;
+}
+
+.bee-theme .opg-row-actions {
+  justify-content: flex-end;
+  gap: 18px;
+  display: flex;
+}
+
+.bee-theme .opg-row-actions button {
+  color: #deb76a;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+.bee-theme .opg-row-actions button.opg-danger {
+  color: #ed8a95;
+}
+
+.bee-theme .opg-row-actions button:disabled {
+  opacity: .37;
+  cursor: not-allowed;
+}
+
+.bee-theme .opg-row-actions button:not(:disabled):hover {
+  filter: brightness(1.2);
+}
+
+.bee-theme .opg-empty {
+  color: #777;
+  align-content: center;
+  justify-items: center;
+  gap: 13px;
+  height: 260px;
+  font-size: 13px;
+  display: grid;
+}
+
+.bee-theme .opg-pagination {
+  color: #888;
+  background: #0003;
+  border-top: 1px solid #ffffff15;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 17px;
+  font-size: 12px;
+  display: flex;
+}
+
+.bee-theme .opg-pagination b {
+  color: #eee;
+  font-weight: 550;
+}
+
+.bee-theme .opg-pagination-controls {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.bee-theme .opg-size {
+  display: block;
+  position: relative;
+}
+
+.bee-theme .opg-size select {
+  appearance: none;
+  color: #eee;
+  cursor: pointer;
+  background: #ffffff0e;
+  border: 1px solid #ffffff25;
+  border-radius: 7px;
+  min-width: 70px;
+  height: 29px;
+  padding: 0 26px 0 11px;
+  font-size: 12px;
+}
+
+.bee-theme .opg-size option {
+  color: #fff;
+  background: #161616;
+}
+
+.bee-theme .opg-size svg {
+  pointer-events: none;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+}
+
+.bee-theme .opg-pager {
+  color: #eee;
+  background: #ffffff0d;
+  border: 1px solid #ffffff25;
+  border-radius: 7px;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 5px;
+  display: flex;
+}
+
+.bee-theme .opg-pager button {
+  place-items: center;
+  padding: 4px;
+  display: grid;
+}
+
+.bee-theme .opg-pager button:disabled {
+  opacity: .28;
+  cursor: not-allowed;
+}
+
+.bee-theme .opg-pager span {
+  text-align: center;
+  min-width: 20px;
+}
+
+.bee-theme .opg-option-id {
+  color: #888;
+  font-size: 10px;
+  display: block;
+}
+
+.bee-theme .opg-editor .oc-header {
+  margin-bottom: 14px;
+}
+
+.bee-theme .opg-editor .oc-form {
+  gap: 17px;
+}
+
+.bee-theme .opg-packages {
+  gap: 11px;
+  display: grid;
+}
+
+.bee-theme .opg-packages-head {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.bee-theme .opg-packages-head b {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bee-theme .opg-packages-head b span {
+  color: #aaa;
+  margin-left: 3px;
+  font-weight: 450;
+}
+
+.bee-theme .opg-packages-head .oc-btn {
+  padding: 7px 9px;
+  font-size: 11px;
+}
+
+.bee-theme .opg-package-box {
+  background: #05050570;
+  border: 1px solid #ffffff19;
+  border-radius: 8px;
+  gap: 12px;
+  padding: 15px;
+  display: grid;
+}
+
+.bee-theme .opg-package-controls {
+  color: #bbb;
+  justify-content: flex-end;
+  gap: 9px;
+  font-size: 11px;
+  display: flex;
+}
+
+.bee-theme .opg-package-controls button:hover {
+  color: #fff;
+}
+
+.bee-theme .opg-package-controls span {
+  color: #555;
+}
+
+.bee-theme .opg-package-search {
+  width: 100%;
+  max-width: none;
+}
+
+.bee-theme .opg-muted {
+  text-align: center;
+  color: #888;
+  padding: 15px 5px;
+  font-size: 12px;
+}
+
+.bee-theme .opg-package-options {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  max-height: 250px;
+  display: grid;
+  overflow: auto;
+}
+
+.bee-theme .opg-package-options button {
+  text-align: left;
+  color: #ddd;
+  background: #ffffff08;
+  border: 1px solid #ffffff12;
+  border-radius: 7px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 11px;
+  font-size: 11px;
+  display: flex;
+}
+
+.bee-theme .opg-package-options button[aria-pressed="true"] {
+  background: #ffffff18;
+  border-color: #ffffff50;
+}
+
+.bee-theme .opg-package-options button > span:last-child {
+  color: #999;
+  white-space: nowrap;
+}
+
+.bee-theme .opg-pkg-name {
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  display: flex;
+}
+
+.bee-theme .opg-pkg-name b {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 530;
+  overflow: hidden;
+}
+
+.bee-theme .opg-tick {
+  border: 1px solid #fff5;
+  border-radius: 4px;
+  flex-shrink: 0;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  display: grid;
+}
+
+.bee-theme .opg-tick.checked {
+  color: #111;
+  background: #eee;
+}
+
+.bee-theme .opg-form-actions {
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.bee-theme .opg-form-actions button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.bee-theme .opg-error {
+  color: #ffb8b8;
+  background: #e6565611;
+  border: 1px solid #e6565655;
+  border-radius: 7px;
+  padding: 12px 14px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.bee-theme .opg-modal-backdrop {
+  z-index: 100;
+  background: #000a;
+  place-items: center;
+  padding: 18px;
+  display: grid;
+  position: fixed;
+  inset: 0;
+}
+
+.bee-theme .opg-modal {
+  background: #131416;
+  border: 1px solid #ffffff25;
+  border-radius: 12px;
+  width: min(420px, 100%);
+  padding: 24px;
+  box-shadow: 0 16px 65px #000a;
+}
+
+.bee-theme .opg-modal h3 {
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.bee-theme .opg-modal p {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.bee-theme .opg-modal strong {
+  color: #eee;
+}
+
+.bee-theme .opg-modal-buttons {
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 22px;
+  display: flex;
+}
+
+.bee-theme .opg-danger-button {
+  color: #fff;
+  background: #9e3740;
+  border-color: #b94a53;
+}
+
+@media (max-width: 700px) {
+  .bee-theme .opg-package-options {
+    grid-template-columns: 1fr;
+  }
+
+  .bee-theme .opg-row-actions {
+    gap: 9px;
+  }
+
+  .bee-theme .opg-pagination {
+    padding: 12px;
+  }
+
+  .bee-theme .opg-row-actions button {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=src_app_owner-product-groups_css_1igg3k2-ikub5._.single.css.map*/

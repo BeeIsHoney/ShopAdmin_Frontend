@@ -1,0 +1,56 @@
+/* [project]/src/app/website-settings.css [app-client] (css) */
+.website-settings-card {
+  margin-bottom: 20px;
+}
+
+.website-feature-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+  display: grid;
+}
+
+.website-feature {
+  border: 1px solid var(--border, #ffffff1a);
+  cursor: pointer;
+  border-radius: 12px;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  display: flex;
+}
+
+.website-feature > span {
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+  display: flex;
+}
+
+.website-feature small {
+  opacity: .65;
+}
+
+.website-feature input {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.website-feature.is-locked {
+  opacity: .58;
+  cursor: default;
+}
+
+.website-feature.is-locked input {
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .website-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=src_app_website-settings_css_1igg3k2-ikub5._.single.css.map*/
