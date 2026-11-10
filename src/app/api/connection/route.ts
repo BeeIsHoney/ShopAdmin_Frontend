@@ -9,5 +9,5 @@ export async function GET(){
   const problem=inspectShopHealth(health.status,body);if(problem)return reply(problem);
   const main=await upstream('health/main'),connection=await main.json().catch(()=>({}));
   return reply(inspectMainConnection(main.status,connection,body.version));
- }catch{return reply({state:'offline',message:'Shop Backend is unavailable. Start Shop Backend on port 8081 and check the connection again.'});}
+ }catch{return reply({state:'offline',message:'Shop Backend is unavailable. Check the SHOP_BACKEND_URL setting and Railway service status.'});}
 }

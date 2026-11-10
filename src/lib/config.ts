@@ -12,6 +12,10 @@ function backendUrl(value: string | undefined, fallback: string, name: string) {
   throw new Error(`${name} must be a valid backend base URL without credentials, query parameters or a fragment.`);
  }
 }
-export const BACKEND_URL=backendUrl(process.env.SHOP_BACKEND_URL,'http://127.0.0.1:8081','SHOP_BACKEND_URL');
-export const MAIN_URL=backendUrl(process.env.MAIN_BACKEND_URL,'http://127.0.0.1:8080','MAIN_BACKEND_URL');
+// Railway service URLs are the Vercel defaults; localhost remains the local default.
+const onVercel = process.env.VERCEL === '1';
+const shopFallback = onVercel ? 'https://tornadoserviceshopbackend-production.up.railway.app' : 'http://127.0.0.1:8081';
+const mainFallback = onVercel ? 'https://tornadoservicemainbackend-production.up.railway.app' : 'http://127.0.0.1:8080';
+export const BACKEND_URL=backendUrl(process.env.SHOP_BACKEND_URL,shopFallback,'SHOP_BACKEND_URL');
+export const MAIN_URL=backendUrl(process.env.MAIN_BACKEND_URL,mainFallback,'MAIN_BACKEND_URL');
 export const PANEL={head:false,role:'ADMIN_USER',title:'Shop Admin',port:3001} as const;
